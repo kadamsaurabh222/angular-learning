@@ -1,0 +1,21 @@
+<h1>Skills List</h1>
+
+<!-- @for(skill of skills; track skill) {
+
+  <p>{{ skill }}</p>
+
+} -->
+
+<!-- displaying index of skill also -->
+@for(skill of skills; track skill; let i = $index) {
+
+  <p>{{ i + 1 }} - {{ skill }}</p>
+
+}
+
+
+@for(employee of employees; track employee.id) {
+
+  <p>{{ employee.name }} - {{ employee.role }} ({{ employee.experience }} years)</p>
+
+}
