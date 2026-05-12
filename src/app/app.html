@@ -4,3 +4,24 @@
 <app-counter></app-counter>
 <app-toggle-text></app-toggle-text>
 <app-skills-list></app-skills-list>
+
+
+<h1>Employee Details : ( reusable component )</h1>
+
+<app-employee-card
+  [name]="'Saurabh'"
+  [role]="'Frontend Developer'"
+  [experience]="3">
+</app-employee-card>
+
+<app-employee-card
+  [name]="'Rahul'"
+  [role]="'Angular Developer'"
+  [experience]="2">
+</app-employee-card>
+
+<app-employee-card
+  [name]="'Akshay'"
+  [role]="'Fullstack Developer'"
+  [experience]="5">
+</app-employee-card>        
