@@ -8,11 +8,21 @@ import { EmployeeCardComponent } from './components/employee-card/employee-card'
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, HeaderComponent, CounterComponent, ToggleTextComponent, 
-    SkillsListComponent, EmployeeCardComponent],
+  imports: [
+    RouterOutlet,
+    HeaderComponent,
+    CounterComponent,
+    ToggleTextComponent,
+    SkillsListComponent,
+    EmployeeCardComponent,
+  ],
   templateUrl: './app.html',
-  styleUrl: './app.css'
+  styleUrl: './app.css',
 })
 export class App {
   protected readonly title = signal('angular-practice');
+
+  showMessage(employeeName: string) {
+    alert(employeeName + ' removed successfully');
+  }
 }
