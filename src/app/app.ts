@@ -5,6 +5,7 @@ import { CounterComponent } from './components/counter/counter';
 import { ToggleTextComponent } from './components/toggle-text/toggle-text';
 import { SkillsListComponent } from './components/skills-list/skills-list';
 import { EmployeeCardComponent } from './components/employee-card/employee-card';
+import { ProfileCardComponent } from './components/profile-card/profile-card';
 
 @Component({
   selector: 'app-root',
@@ -15,6 +16,7 @@ import { EmployeeCardComponent } from './components/employee-card/employee-card'
     ToggleTextComponent,
     SkillsListComponent,
     EmployeeCardComponent,
+    ProfileCardComponent
   ],
   templateUrl: './app.html',
   styleUrl: './app.css',
