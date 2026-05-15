@@ -43,3 +43,38 @@
   [imageUrl]="'https://i.pravatar.cc/150?img=5'"
 >
 </app-profile-card>
+
+<h1>Two-Way Binding Example</h1>
+
+<input type="text" [(ngModel)]="userName" placeholder="Enter your name" />
+
+<h2>Welcome {{ userName }}</h2>
+
+<textarea
+  [(ngModel)]="message"
+  placeholder="Type message">
+</textarea>
+
+<p>Character Count: {{ message.length }}</p>
+
+<h1>Login Form</h1>
+
+<input
+  type="email"
+  [(ngModel)]="email"
+  placeholder="Enter email">
+
+<br><br>
+
+<input
+  type="password"
+  [(ngModel)]="password"
+  placeholder="Enter password">
+
+<br><br>
+
+<button (click)="login()">
+  Login
+</button>
+
+<h3>Email: {{ email }}</h3>

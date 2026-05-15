@@ -6,6 +6,7 @@ import { ToggleTextComponent } from './components/toggle-text/toggle-text';
 import { SkillsListComponent } from './components/skills-list/skills-list';
 import { EmployeeCardComponent } from './components/employee-card/employee-card';
 import { ProfileCardComponent } from './components/profile-card/profile-card';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
@@ -16,7 +17,8 @@ import { ProfileCardComponent } from './components/profile-card/profile-card';
     ToggleTextComponent,
     SkillsListComponent,
     EmployeeCardComponent,
-    ProfileCardComponent
+    ProfileCardComponent,
+    FormsModule,
   ],
   templateUrl: './app.html',
   styleUrl: './app.css',
@@ -26,5 +28,16 @@ export class App {
 
   showMessage(employeeName: string) {
     alert(employeeName + ' removed successfully');
+  }
+
+  userName = '';
+  message = '';
+
+  email = '';
+
+  password = '';
+
+  login() {
+    alert('Login Successful');
   }
 }
