@@ -7,6 +7,7 @@ import { SkillsListComponent } from './components/skills-list/skills-list';
 import { EmployeeCardComponent } from './components/employee-card/employee-card';
 import { ProfileCardComponent } from './components/profile-card/profile-card';
 import { FormsModule } from '@angular/forms';
+import { EmployeeService } from './services/employee';
 
 @Component({
   selector: 'app-root',
@@ -39,5 +40,11 @@ export class App {
 
   login() {
     alert('Login Successful');
+  }
+
+  employees: any[] = [];
+
+  constructor(private employeeService: EmployeeService) {
+    this.employees = this.employeeService.employees;
   }
 }

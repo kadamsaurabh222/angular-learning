@@ -78,3 +78,18 @@
 </button>
 
 <h3>Email: {{ email }}</h3>
+
+
+<h1>Employee Service Example</h1>
+
+@for(employee of employees; track employee.id) {
+
+  <div>
+
+    <h3>{{ employee.name }}</h3>
+
+    <p>{{ employee.role }}</p>
+
+  </div>
+
+}
